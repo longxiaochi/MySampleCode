@@ -12,7 +12,6 @@
 #import "LCCollectionReusableView.h"
 #import "LCCollectionViewCell.h"
 #import "UIColor+Random.h"
-#import <SDWebImage/SDWebImage.h>
 
 static NSString *const CollectionViewCellReuseIdentifier = @"CollectionViewCellReuseIdentifier";
 static NSString *const CollectionViewHeaderReuseIdentifier = @"CollectionViewCellReuseIdentifier";
@@ -51,22 +50,22 @@ static NSString *const CollectionViewFooterReuseIdentifier = @"CollectionViewCel
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     LCCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CollectionViewCellReuseIdentifier forIndexPath:indexPath];
-//    cell.backgroundColor = UIColor.randomColor;
-//    [cell.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-//
-//    UILabel *label = [[UILabel alloc] init];
-//    label.frame = CGRectMake(10, cell.frame.size.height/2, cell.frame.size.width, 30);
-//    label.textColor = UIColor.blackColor;
-//    label.text = [NSString stringWithFormat:@"%@-%@", @(indexPath.section), @(indexPath.row)];
-//    [cell addSubview:label];
-//    cell.imageView.image = [UIImage imageNamed:@"singlePic"];
+    cell.backgroundColor = UIColor.randomColor;
+    [cell.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+
+    UILabel *label = [[UILabel alloc] init];
+    label.frame = CGRectMake(10, cell.frame.size.height/2, cell.frame.size.width, 30);
+    label.textColor = UIColor.blackColor;
+    label.text = [NSString stringWithFormat:@"%@-%@", @(indexPath.section), @(indexPath.row)];
+    [cell addSubview:label];
+    cell.imageView.image = [UIImage imageNamed:@"singlePic"];
     
-    if (indexPath.section == 0) {
-        [cell.imageView sd_setImageWithURL:[NSURL URLWithString:@"http://patpatwebstatic.s3.us-west-2.amazonaws.com/origin/other/cms/position/5ddb8dd3f2fcb.jpg"]];
-    } else {
-        cell.imageView.image = [UIImage imageNamed:@"singlePic"];
-    }
-    cell.label.text = [NSString stringWithFormat:@"%@-%@", @(indexPath.section), @(indexPath.row)];
+//    if (indexPath.section == 0) {
+//        [cell.imageView sd_setImageWithURL:[NSURL URLWithString:@"http://patpatwebstatic.s3.us-west-2.amazonaws.com/origin/other/cms/position/5ddb8dd3f2fcb.jpg"]];
+//    } else {
+//        cell.imageView.image = [UIImage imageNamed:@"singlePic"];
+//    }
+//    cell.label.text = [NSString stringWithFormat:@"%@-%@", @(indexPath.section), @(indexPath.row)];
 
     return cell;
 }
