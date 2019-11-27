@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD1DB2DF238E2C250074B3F6 /* LCPlainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1DB2DE238E2C250074B3F6 /* LCPlainTableViewController.m */; };
 		FD731BEC238D4B8F00F57F2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD731BEB238D4B8F00F57F2E /* AppDelegate.m */; };
 		FD731BEF238D4B8F00F57F2E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD731BEE238D4B8F00F57F2E /* SceneDelegate.m */; };
 		FD731BF2238D4B8F00F57F2E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD731BF1238D4B8F00F57F2E /* ViewController.m */; };
@@ -42,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD1DB2DD238E2C250074B3F6 /* LCPlainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCPlainTableViewController.h; sourceTree = "<group>"; };
+		FD1DB2DE238E2C250074B3F6 /* LCPlainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCPlainTableViewController.m; sourceTree = "<group>"; };
+		FD1DB2E8238EA7480074B3F6 /* MySimpleCode-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MySimpleCode-PrefixHeader.pch"; sourceTree = "<group>"; };
+		FD1DB2E9238EA8880074B3F6 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		FD731BE7238D4B8E00F57F2E /* MySimpleCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySimpleCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD731BEA238D4B8E00F57F2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FD731BEB238D4B8F00F57F2E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -99,6 +104,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD1DB2DB238E2BF20074B3F6 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		FD1DB2DC238E2C090074B3F6 /* Plain */ = {
+			isa = PBXGroup;
+			children = (
+				FD1DB2DD238E2C250074B3F6 /* LCPlainTableViewController.h */,
+				FD1DB2DE238E2C250074B3F6 /* LCPlainTableViewController.m */,
+			);
+			path = Plain;
+			sourceTree = "<group>";
+		};
 		FD731BDE238D4B8E00F57F2E = {
 			isa = PBXGroup;
 			children = (
@@ -131,11 +152,13 @@
 				FD731BEE238D4B8F00F57F2E /* SceneDelegate.m */,
 				FD731BF0238D4B8F00F57F2E /* ViewController.h */,
 				FD731BF1238D4B8F00F57F2E /* ViewController.m */,
+				FD1DB2E8238EA7480074B3F6 /* MySimpleCode-PrefixHeader.pch */,
 				FD731BF3238D4B8F00F57F2E /* Main.storyboard */,
 				FD731BF6238D4B9000F57F2E /* Assets.xcassets */,
 				FD731BF8238D4B9000F57F2E /* LaunchScreen.storyboard */,
 				FD731BFB238D4B9000F57F2E /* Info.plist */,
 				FD731BFC238D4B9000F57F2E /* main.m */,
+				FD1DB2E9238EA8880074B3F6 /* Header.h */,
 			);
 			path = MySimpleCode;
 			sourceTree = "<group>";
@@ -182,6 +205,8 @@
 		FD731C21238D4BD900F57F2E /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
+				FD1DB2DC238E2C090074B3F6 /* Plain */,
+				FD1DB2DB238E2BF20074B3F6 /* Group */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
@@ -346,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD731C2D238D4C6900F57F2E /* UIColor+Random.m in Sources */,
+				FD1DB2DF238E2C250074B3F6 /* LCPlainTableViewController.m in Sources */,
 				FD731BF2238D4B8F00F57F2E /* ViewController.m in Sources */,
 				FD731BEC238D4B8F00F57F2E /* AppDelegate.m in Sources */,
 				FD731BFD238D4B9000F57F2E /* main.m in Sources */,
@@ -524,6 +550,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "MySimpleCode/MySimpleCode-PrefixHeader.pch";
 				INFOPLIST_FILE = MySimpleCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -540,6 +567,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "MySimpleCode/MySimpleCode-PrefixHeader.pch";
 				INFOPLIST_FILE = MySimpleCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

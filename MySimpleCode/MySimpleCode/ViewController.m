@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "LCCollectionViewController.h"
+#import "LCPlainTableViewController.h"
 
 @interface ViewController ()
 
@@ -29,7 +30,8 @@
 
 - (void)buttonEvent:(UIButton *)sender {
 //    LCTableViewController *VC = [[LCTableViewController alloc] init];
-    LCCollectionViewController *VC = [[LCCollectionViewController alloc] init];
+//    LCCollectionViewController *VC = [[LCCollectionViewController alloc] init];
+    LCPlainTableViewController *VC = [[LCPlainTableViewController alloc] init];
     VC.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:VC animated:NO completion:nil];
 }

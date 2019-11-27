@@ -242,5 +242,4 @@ static NSString *const CollectionViewFooterReuseIdentifier = @"CollectionViewCel
     return _datas;
 }
 
-
 @end
