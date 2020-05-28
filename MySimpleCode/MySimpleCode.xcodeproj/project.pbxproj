@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8E82623736FC777AA2B7B13 /* Pods_MySimpleCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F497CBAFD609045B23623C /* Pods_MySimpleCode.framework */; };
 		FD1DB2DF238E2C250074B3F6 /* LCPlainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1DB2DE238E2C250074B3F6 /* LCPlainTableViewController.m */; };
 		FD731BEC238D4B8F00F57F2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD731BEB238D4B8F00F57F2E /* AppDelegate.m */; };
 		FD731BEF238D4B8F00F57F2E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD731BEE238D4B8F00F57F2E /* SceneDelegate.m */; };
@@ -43,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1689AD39959E8FB514ADF3FB /* Pods-MySimpleCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySimpleCode.release.xcconfig"; path = "Target Support Files/Pods-MySimpleCode/Pods-MySimpleCode.release.xcconfig"; sourceTree = "<group>"; };
+		23D84B181F0989CD5EDC806E /* Pods-MySimpleCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySimpleCode.debug.xcconfig"; path = "Target Support Files/Pods-MySimpleCode/Pods-MySimpleCode.debug.xcconfig"; sourceTree = "<group>"; };
+		81F497CBAFD609045B23623C /* Pods_MySimpleCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySimpleCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1DB2DD238E2C250074B3F6 /* LCPlainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCPlainTableViewController.h; sourceTree = "<group>"; };
 		FD1DB2DE238E2C250074B3F6 /* LCPlainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCPlainTableViewController.m; sourceTree = "<group>"; };
 		FD1DB2E8238EA7480074B3F6 /* MySimpleCode-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MySimpleCode-PrefixHeader.pch"; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8E82623736FC777AA2B7B13 /* Pods_MySimpleCode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +109,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		849F2C8BAE4B5D8D0D5E822F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81F497CBAFD609045B23623C /* Pods_MySimpleCode.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B863C67587FCD7CBEE45A87C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23D84B181F0989CD5EDC806E /* Pods-MySimpleCode.debug.xcconfig */,
+				1689AD39959E8FB514ADF3FB /* Pods-MySimpleCode.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FD1DB2DB238E2BF20074B3F6 /* Group */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +150,8 @@
 				FD731C05238D4B9100F57F2E /* MySimpleCodeTests */,
 				FD731C10238D4B9100F57F2E /* MySimpleCodeUITests */,
 				FD731BE8238D4B8E00F57F2E /* Products */,
+				B863C67587FCD7CBEE45A87C /* Pods */,
+				849F2C8BAE4B5D8D0D5E822F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -247,9 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD731C16238D4B9100F57F2E /* Build configuration list for PBXNativeTarget "MySimpleCode" */;
 			buildPhases = (
+				559C293D35D74D30955817E4 /* [CP] Check Pods Manifest.lock */,
 				FD731BE3238D4B8E00F57F2E /* Sources */,
 				FD731BE4238D4B8E00F57F2E /* Frameworks */,
 				FD731BE5238D4B8E00F57F2E /* Resources */,
+				0A80C0417D282E27DBFD0DC6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -364,6 +391,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A80C0417D282E27DBFD0DC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySimpleCode/Pods-MySimpleCode-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySimpleCode/Pods-MySimpleCode-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MySimpleCode/Pods-MySimpleCode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		559C293D35D74D30955817E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MySimpleCode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FD731BE3238D4B8E00F57F2E /* Sources */ = {
@@ -547,6 +616,7 @@
 		};
 		FD731C17238D4B9100F57F2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23D84B181F0989CD5EDC806E /* Pods-MySimpleCode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -564,6 +634,7 @@
 		};
 		FD731C18238D4B9100F57F2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1689AD39959E8FB514ADF3FB /* Pods-MySimpleCode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
